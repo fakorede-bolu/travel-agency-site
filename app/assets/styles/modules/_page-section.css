@@ -1,11 +1,24 @@
 .page-section {
     padding: 1.2rem 0;
 
+
     @mixin atMedium {
         padding: 4.5rem 0;
-    }
-    
 
+    }
+    &--small {
+        max-width: 800px;
+        margin-left: 18px;
+        margin-right: 18px;
+        
+        
+        @mixin atSmall {
+          max-width: 100%;
+          margin-left: 0;
+          margin-right: 0;  
+        }
+       
+    }
     &--blue {
         background-color: $mainBlue;
         color: white;
